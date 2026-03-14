@@ -1,107 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SmileCare Dental Clinic</title>
+<title>SmileCare Dental</title>
+
 <style>
+
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f9ff;
+font-family: Arial;
+margin:0;
+background:white;
 }
 
 header{
-    background:#2c7be5;
-    color:white;
-    padding:20px;
-    text-align:center;
+background:#0a4dbf;
+color:white;
+padding:20px;
+text-align:center;
 }
 
 nav{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    background:#1f5fbf;
-    padding:10px;
+background:#1e73ff;
+padding:12px;
+text-align:center;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
 }
 
 .hero{
-    text-align:center;
-    padding:60px 20px;
-    background:white;
+text-align:center;
+padding:80px;
+background:#f2f7ff;
 }
 
 .hero h1{
-    font-size:40px;
+font-size:42px;
+color:#0a4dbf;
 }
 
 .btn{
-    background:#2c7be5;
-    color:white;
-    padding:12px 25px;
-    border:none;
-    border-radius:5px;
-    text-decoration:none;
-    font-size:18px;
+background:#1e73ff;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:5px;
 }
 
-.services{
-    padding:40px;
-    text-align:center;
-}
-
-.service-box{
-    display:inline-block;
-    width:250px;
-    margin:15px;
-    padding:20px;
-    background:white;
-    border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-.booking{
-    background:#e8f1ff;
-    padding:50px;
-    text-align:center;
-}
-
-form{
-    max-width:400px;
-    margin:auto;
-}
-
-input, select{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border-radius:5px;
-    border:1px solid #ccc;
-}
-
-button{
-    background:#2c7be5;
-    color:white;
-    padding:12px;
-    border:none;
-    border-radius:5px;
-    width:100%;
-    font-size:16px;
+section{
+padding:50px;
+text-align:center;
 }
 
 footer{
-    background:#1f5fbf;
-    color:white;
-    text-align:center;
-    padding:15px;
+background:#0a4dbf;
+color:white;
+padding:15px;
+text-align:center;
 }
+
 </style>
 </head>
 
@@ -109,66 +69,272 @@ footer{
 
 <header>
 <h1>SmileCare Dental Clinic</h1>
-<p>Your Healthy Smile Starts Here</p>
+<p>Professional Dental Care</p>
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Services</a>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Services</a>
+<a href="reviews.html">Reviews</a>
 <a href="#book">Book Now</a>
-<a href="#">Contact</a>
 </nav>
 
-<section class="hero">
-<h1>Professional Dental Care</h1>
-<p>We provide the best dental treatments for your smile.</p>
+<div class="hero">
+
+<h1>Your Perfect Smile Starts Here</h1>
+
+<p>Experienced dentists providing quality treatment.</p>
+
+<br>
+
 <a href="#book" class="btn">Book Appointment</a>
-</section>
 
-<section class="services">
-<h2>Our Services</h2>
-
-<div class="service-box">
-<h3>Teeth Cleaning</h3>
-<p>Professional cleaning for healthy teeth.</p>
 </div>
 
-<div class="service-box">
-<h3>Dental Implants</h3>
-<p>Permanent solutions for missing teeth.</p>
-</div>
+<section>
 
-<div class="service-box">
-<h3>Teeth Whitening</h3>
-<p>Brighten your smile instantly.</p>
-</div>
+<h2>Why Choose Us</h2>
+
+<p>✔ Experienced Dentists</p>
+<p>✔ Modern Equipment</p>
+<p>✔ Comfortable Clinic</p>
+<p>✔ Affordable Treatments</p>
 
 </section>
 
-<section class="booking" id="book">
-<h2>Book Your Appointment</h2>
 
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Email Address" required>
-<input type="tel" placeholder="Phone Number" required>
+<section id="book">
 
-<select required>
-<option value="">Select Service</option>
+<h2>Book Appointment</h2>
+
+<form action="https://formsubmit.co/avagankrushna279@gmail.com" method="POST">
+
+<input type="text" name="Name" placeholder="Full Name" required><br><br>
+
+<input type="email" name="Email" placeholder="Email" required><br><br>
+
+<input type="tel" name="Phone" placeholder="Phone Number" required><br><br>
+
+<select name="Service">
+
 <option>Teeth Cleaning</option>
 <option>Dental Implants</option>
+<option>Root Canal</option>
 <option>Teeth Whitening</option>
+
 </select>
 
-<input type="date" required>
+<br><br>
 
-<button type="submit">Book Now</button>
+<input type="date" name="Date" required><br><br>
+
+<button type="submit" class="btn">Book Now</button>
+
 </form>
 
 </section>
 
 <footer>
-<p>© 2026 SmileCare Dental Clinic | All Rights Reserved</p>
+
+© 2026 SmileCare Dental Clinic
+
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us - SmileCare</title>
+
+<style>
+body{font-family:Arial;margin:0;}
+header{background:#0a4dbf;color:white;padding:20px;text-align:center;}
+nav{background:#1e73ff;padding:12px;text-align:center;}
+nav a{color:white;margin:15px;text-decoration:none;font-weight:bold;}
+section{padding:60px;text-align:center;}
+footer{background:#0a4dbf;color:white;text-align:center;padding:15px;}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>About Our Clinic</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Services</a>
+<a href="reviews.html">Reviews</a>
+</nav>
+
+<section>
+
+<h2>Who We Are</h2>
+
+<p>SmileCare Dental Clinic provides high quality dental treatments using modern technology and experienced dentists.</p>
+
+<p>Our mission is to give every patient a healthy and confident smile.</p>
+
+<p>We focus on patient comfort, hygiene and advanced dental solutions.</p>
+
+</section>
+
+<footer>
+© SmileCare Dental
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Services</title>
+
+<style>
+
+body{font-family:Arial;margin:0;}
+
+header{background:#0a4dbf;color:white;padding:20px;text-align:center;}
+
+nav{background:#1e73ff;padding:12px;text-align:center;}
+
+nav a{color:white;margin:15px;text-decoration:none;font-weight:bold;}
+
+.services{
+padding:50px;
+text-align:center;
+}
+
+.box{
+display:inline-block;
+width:250px;
+padding:20px;
+margin:15px;
+background:#f2f7ff;
+border-radius:10px;
+}
+
+footer{background:#0a4dbf;color:white;text-align:center;padding:15px;}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Our Services</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Services</a>
+<a href="reviews.html">Reviews</a>
+</nav>
+
+<div class="services">
+
+<div class="box">
+<h3>Teeth Cleaning</h3>
+<p>Professional dental cleaning for healthy teeth.</p>
+</div>
+
+<div class="box">
+<h3>Dental Implants</h3>
+<p>Permanent solution for missing teeth.</p>
+</div>
+
+<div class="box">
+<h3>Root Canal</h3>
+<p>Painless root canal treatments.</p>
+</div>
+
+<div class="box">
+<h3>Teeth Whitening</h3>
+<p>Bright white smile treatments.</p>
+</div>
+
+</div>
+
+<footer>
+© SmileCare Dental
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Patient Reviews</title>
+
+<style>
+
+body{font-family:Arial;margin:0;}
+
+header{background:#0a4dbf;color:white;padding:20px;text-align:center;}
+
+nav{background:#1e73ff;padding:12px;text-align:center;}
+
+nav a{color:white;margin:15px;text-decoration:none;font-weight:bold;}
+
+.review{
+padding:40px;
+text-align:center;
+}
+
+.box{
+background:#f2f7ff;
+padding:20px;
+margin:20px auto;
+width:60%;
+border-radius:10px;
+}
+
+footer{background:#0a4dbf;color:white;text-align:center;padding:15px;}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Patient Reviews</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Services</a>
+<a href="reviews.html">Reviews</a>
+</nav>
+
+<div class="review">
+
+<div class="box">
+⭐️⭐️⭐️⭐️⭐️  
+<p>"Amazing dentist and very friendly staff!"</p>
+</div>
+
+<div class="box">
+⭐️⭐️⭐️⭐️⭐️  
+<p>"My teeth whitening results were fantastic."</p>
+</div>
+
+<div class="box">
+⭐️⭐️⭐️⭐️⭐️  
+<p>"Very clean clinic and professional treatment."</p>
+</div>
+
+</div>
+
+<footer>
+© SmileCare Dental
 </footer>
 
 </body>
